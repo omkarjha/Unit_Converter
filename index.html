@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+
+        <div class="converter">
+            <input type="number" id="inputValue">
+            <select id="unitType" onchange="populateUnitSelects()">
+                <option value="length">Length</option>
+                <option value="temperature">Temperature</option>
+                <option value="mass">Mass</option>
+                <option value="volume">Volume</option>
+            </select>
+            <select id="inputUnit"></select>
+
+            <span> = </span>
+
+            <input type="number" id="outputValue" disabled>
+            <select id="outputUnit"></select>
+
+            <button onclick="convert()">Convert</button>
+        </div>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <div class="tool-container-field">
+        <div id="OutputInfo" class="tool-output-information tool-output-box">
+            <h2>Unit Conversion Information</h2>
+            <h4>Length</h4>
+            <ul>
+                <li>10 millimeters (mm) = 1 centimeter (cm)</li>
+                <li>1000 millimeters (mm) = 1 meter (m)</li>
+                <li>1000000 millimeters (mm) = 1 kilometer (km)</li>
+                <li>25.4 millimeters (mm) = 1 inch (in)</li>
+                <li>1609344 millimeters (mm) = 1 mile (mi)</li>
+            </ul>
+
+            <h4>Mass</h4>
+            <ul>
+                <li>1000 gram(g) = 1 kilogram(kg)</li>
+                <li>453.592 gram(g) = 1 Pound(lb)</li>
+                <li>28.3495 gram(g) = 1 Ounce(oz)</li>
+
+            </ul>
+            <h4>Temperature</h4>
+            <ul>
+                <li>100° Celsius(C) = 212° Fahrenheit(F)</li>
+                <li>100° Celsius(C) = 373.15 Kelvin(K)</li>
+
+            </ul>
+            <h4>Volume</h4>
+            <ul>
+                <li>1000 mililiter(mL) = 1 Litre(L)</li>
+                <li>3785.41 mililiter(mL) = 1 Gallon(Gal)</li>
+                <li>29.5735 mililiter(mL) = 1 Fluid ounce(floz)</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="tool-author-intro">
+        <p>Developed By <i><a href="https://www.linkedin.com/in/omkar-abhishek-jha-0b7a5823a/" target="_blank">Omkar
+                    Abhishek Jha</a></i>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
