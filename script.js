@@ -41,11 +41,7 @@ function populateUnitSelects() {
         option1.text = unit.label;
         option1.value = unit.value;
         inputUnitSelect.appendChild(option1);
-
-        const option2 = document.createElement('option');
-        option2.text = unit.label;
-        option2.value = unit.value;
-        outputUnitSelect.appendChild(option2);
+        outputUnitSelect.appendChild(option1);
     });
 }
 
