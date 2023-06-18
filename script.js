@@ -41,33 +41,11 @@ function populateUnitSelects() {
         option1.text = unit.label;
         option1.value = unit.value;
         inputUnitSelect.appendChild(option1);
-        outputUnitSelect.appendChild(option1);
-    });
-}
-
-// Rest of the code...
-
-// Populate the unit select dropdowns
-function populateUnitSelects() {
-    const inputUnitSelect = document.getElementById('inputUnit');
-    const outputUnitSelect = document.getElementById('outputUnit');
-    const selectedType = document.getElementById('unitType').value;
-
-    // Clear existing options
-    inputUnitSelect.innerHTML = '';
-    outputUnitSelect.innerHTML = '';
-
-    // Populate with new options based on the selected type
-    units[selectedType].forEach(unit => {
-        const option1 = document.createElement('option');
-        option1.text = unit.label;
-        option1.value = unit.value;
-        inputUnitSelect.add(option1);
-
         const option2 = document.createElement('option');
         option2.text = unit.label;
         option2.value = unit.value;
         outputUnitSelect.add(option2);
+        // outputUnitSelect.appendChild(option1);
     });
 }
 
